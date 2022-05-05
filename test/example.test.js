@@ -1,6 +1,9 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 
+import { renderOils } from '.utils.js';
+import { oils } from './oils.js';
+
 const test = QUnit.test;
 
 test('time to test a function', (expect) => {
@@ -10,7 +13,7 @@ test('time to test a function', (expect) => {
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = true;
+    const actual = renderOils(oils);
 
     //Expect
     // Make assertions about what is expected versus the actual result
